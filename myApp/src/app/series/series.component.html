@@ -1,0 +1,44 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Channel</th>
+            <th>Seasons</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let s of series">
+            <td>
+              <dd>{{s.id}} </dd>
+            </td>
+            <td>
+              <dd><a href={{s.webpage}} target="_blank">{{s.name}}</a></dd>
+            </td>
+            <td>
+              <dd>{{s.channel}}</dd>
+            </td>
+            <td>
+              <dd>{{s.seasons}}</dd>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Seasons Average: {{averageSeasons}}</p>
+    </div>
+  </div>
+</div>
